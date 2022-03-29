@@ -1,0 +1,46 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "antd": "^4.18.6",
+    "axios": "^0.25.0",
+    "dora": "^0.6.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-scripts": "5.0.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": " PORT=5002  REACT_APP_HOST=`wget -qO- http://instance-data/latest/meta-data/public-ipv4` REACT_APP_SHIT=`echo 114` react-scripts start",
+    "devmac": "REACT_APP_ENV=local npm start",
+    "devwindows": "set \"REACT_APP_ENV=local\" && npm start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

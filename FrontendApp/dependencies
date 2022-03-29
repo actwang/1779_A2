@@ -1,0 +1,5 @@
+flask
+Flask-MySQL
+requests
+flask_cors
+boto3
